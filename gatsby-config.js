@@ -21,6 +21,8 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `react-icons`,
+    `local-storage-fallback`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

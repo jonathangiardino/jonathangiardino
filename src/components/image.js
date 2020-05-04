@@ -14,7 +14,7 @@ import Img from "gatsby-image"
  */
 
 const Image = () => {
-  const data = useStaticQuery(graphql`
+  const img = useStaticQuery(graphql`
     query {
       peepJonathan: file(relativePath: { eq: "peep-jonathan.png" }) {
         childImageSharp {
@@ -26,7 +26,7 @@ const Image = () => {
     }
   `)
 
-  return <Img fluid={data.peepJonathan.childImageSharp.fluid} />
+  return <Img fluid={img.peepJonathan.childImageSharp.fluid} />
 }
 
 export default Image

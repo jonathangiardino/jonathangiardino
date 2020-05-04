@@ -1,16 +1,25 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
-import React from "react"
+import React, { useContext } from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import styled from "styled-components"
+import Context from "../store/context"
 
-import "./layout.css"
+const Body = styled.body`
+  margin: 0;
+  padding: 0;
+  font-family: ${props => props.theme.fonts.main};
+  text-decoration: none;
+`
+
+const Container = styled.div`
+  height: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+`
 
 const Layout = ({ children }) => {
+  const { state } = useContext(Context)
+
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -22,11 +31,16 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
-      <div>
+    <Body
+      style={{
+        backgroundColor: state.isDark ? "#09323a" : "#fff",
+        color: state.isDark ? "#fff" : "#09323a",
+      }}
+    >
+      <Container>
         <main>{children}</main>
-      </div>
-    </>
+      </Container>
+    </Body>
   )
 }
 

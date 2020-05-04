@@ -1,4 +1,12 @@
 export default {
+  text: {
+    light: "#fff",
+    dark: "#09323a",
+  },
+  background: {
+    light: "#fff",
+    dark: "#09323a",
+  },
   fonts: {
     main: "Poppins",
     code: "Monaco",
@@ -11,8 +19,6 @@ export default {
     title: "2.25rem",
   },
   colors: {
-    light: "#fff",
-    dark: "#09323a",
     primary: "#1c9eb7",
     secondary: "#116170",
     lightBlue: "#69979f",
