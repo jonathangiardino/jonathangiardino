@@ -6,37 +6,14 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Header from "../components/header"
+import Hero from "../components/hero"
 
 const IndexPage = () => {
-  const img = useStaticQuery(graphql`
-    query {
-      peepJonathan: file(relativePath: { eq: "peep-jonathan.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      peepJonathanSitting: file(
-        relativePath: { eq: "peep-jonathan-sitting.png" }
-      ) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
-
   return (
     <Layout>
       <SEO title="Home" />
       <Header />
-      <div style={{ maxWidth: "350px" }}>
-        <Img fluid={img.peepJonathan.childImageSharp.fluid} />
-      </div>
-      <Link to="/page-2/">Go to page 2</Link>
+      <Hero />
     </Layout>
   )
 }

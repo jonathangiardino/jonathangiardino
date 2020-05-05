@@ -12,7 +12,7 @@ const Nav = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: ${props => props.theme.spacing.medium} 0;
+  padding: ${props => props.theme.spacing.small} 0;
 `
 const Menu = styled.div`
   display: flex;

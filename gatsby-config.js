@@ -23,6 +23,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `react-icons`,
     `local-storage-fallback`,
+    `kursor`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

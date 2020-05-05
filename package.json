@@ -17,6 +17,7 @@
     "gatsby-source-filesystem": "^2.3.0",
     "gatsby-styled-components-dark-mode": "^1.1.1",
     "gatsby-transformer-sharp": "^2.5.0",
+    "kursor": "^0.1.6",
     "local-storage-fallback": "^4.1.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",

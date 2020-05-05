@@ -1,5 +1,6 @@
 import React, { useContext } from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 import styled from "styled-components"
 import Context from "../store/context"
 
@@ -27,6 +28,13 @@ const Layout = ({ children }) => {
           title
         }
       }
+      Corner: file(relativePath: { eq: "Corner.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
@@ -37,6 +45,10 @@ const Layout = ({ children }) => {
         color: state.isDark ? "#fff" : "#09323a",
       }}
     >
+      <Img
+        fluid={data.Corner.childImageSharp.fluid}
+        style={{ width: "5rem", position: "absolute", top: "0", left: "0" }}
+      />
       <Container>
         <main>{children}</main>
       </Container>

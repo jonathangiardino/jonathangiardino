@@ -7,6 +7,10 @@ import Context from "../store/context"
 const MenuLink = styled.a`
   margin-left: ${props => props.theme.spacing.medium};
   font-size: ${props => props.theme.fontSize.extraSmall};
+  transition: all 0.6 ease-in-out;
+  &:hover {
+    color: ${props => props.theme.colors.primary} !important;
+  }
 `
 
 const MenuItem = props => {
