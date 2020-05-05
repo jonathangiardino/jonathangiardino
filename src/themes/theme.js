@@ -9,10 +9,10 @@ export default {
   },
   fonts: {
     main: "Poppins",
-    code: "Monaco",
+    code: "Monospace",
   },
   fontSize: {
-    extraSmall: "1rem",
+    extraSmall: "0.9rem",
     description: "1rem",
     smallTitle: "1.75rem",
     text: "1.5rem",

@@ -9,7 +9,7 @@ const HeroContainer = styled.div`
   width: 100%;
   height: 65vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 `
 const TitleContainer = styled.div`
@@ -43,11 +43,10 @@ const Hero = props => {
       <TitleContainer>
         <HeroTitle>
           ( “Hello, World” ) 👋 <br />
-          My name is <Span>Jonathan Giardino</Span>.<br />I am a
-          creative-minded, focused on building awesome stuff for the{" "}
-          <Span>Web</Span> and <Span>iOS</Span>.
+          My name is <Span>Jonathan Giardino</Span>. <br /> I design and build
+          awesome stuff for the <Span>Web</Span> and <Span>iOS</Span>.
         </HeroTitle>
-        <Button text="Say Hello Back" action={() => alert("hello")} />
+        <Button text="Drop me a line" action={() => alert("hello")} />
       </TitleContainer>
       <Img
         fluid={img.peepJonathan.childImageSharp.fluid}
