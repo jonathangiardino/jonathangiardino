@@ -16,7 +16,9 @@ export default {
     description: "1rem",
     smallTitle: "1.75rem",
     text: "1.5rem",
+    small: "1.25rem",
     title: "2rem",
+    hero: "2.2rem",
   },
   fontWeight: {
     light: "300",
@@ -41,10 +43,14 @@ export default {
     small: "1rem",
     medium: "2rem",
     large: "3rem",
+    xlarge: "5rem",
   },
   animations: {},
   shadows: {
     normal: "4px 4px 0px 0px rgba(28,158,183,1)",
     reduced: "2px 2px 0px 0px rgba(28,158,183,1)",
+    dark: "4px 4px 0px 0px #116170",
+    darkReduced: "2px 2px 0px 0px rgba(9, 50, 58, 1)",
+    text: "2px 2px 0px rgba(28,158,183,1)",
   },
 }

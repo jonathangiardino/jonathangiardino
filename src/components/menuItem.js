@@ -12,6 +12,9 @@ const MenuLink = styled.a`
   &:hover {
     color: ${props => props.theme.colors.primary} !important;
   }
+  @media ${props => props.theme.breakpoints.mobile} {
+    display: none;
+  }
 `
 
 const MenuItem = props => {

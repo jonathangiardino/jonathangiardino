@@ -7,6 +7,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Header from "../components/header"
 import Hero from "../components/hero"
+import HorizontalScroll from "../components/horizontalScroll"
 
 const IndexPage = () => {
   return (
@@ -14,6 +15,7 @@ const IndexPage = () => {
       <SEO title="Home" />
       <Header />
       <Hero />
+      <HorizontalScroll />
     </Layout>
   )
 }

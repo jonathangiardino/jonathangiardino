@@ -9,10 +9,12 @@ import ToggleDarkMode from "./toggle"
 
 // Style
 const Nav = styled.div`
+  max-width: 80rem;
+  margin: 0 auto;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: ${props => props.theme.spacing.small} 0;
+  padding: ${props => props.theme.spacing.small};
 `
 const Menu = styled.div`
   display: flex;
@@ -26,6 +28,9 @@ const MenuIcon = styled.div`
   justify-content: center;
   align-items: center;
   margin-left: ${props => props.theme.spacing.medium};
+  @media ${props => props.theme.breakpoints.mobile} {
+    display: none;
+  }
 `
 // Component
 const Header = () => {
@@ -40,7 +45,7 @@ const Header = () => {
         <MenuItem title="Blog" />
         <Link to="/page-2/" style={{ textDecoration: "none" }}>
           <MenuIcon style={{ color: state.isDark ? "#fff" : "#09323a" }}>
-            <MdEmail style={{ fontSize: "1.5rem" }} />
+            <MdEmail style={{ fontSize: "2rem" }} />
           </MenuIcon>
         </Link>
         <ToggleDarkMode />

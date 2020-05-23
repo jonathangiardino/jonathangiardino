@@ -50,7 +50,7 @@ const Slider = styled.span`
     position: absolute;
     content: "";
     height: 1.6rem;
-    width: 1.6em;
+    width: 1.6rem;
     left: 0.1rem;
     bottom: 0.1rem;
     background-color: white;
