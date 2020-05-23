@@ -1,0 +1,81 @@
+import React from "react"
+import styled from "styled-components"
+import { Link } from "gatsby"
+import { AiOutlineGithub } from "react-icons/ai"
+import { FiExternalLink } from "react-icons/fi"
+
+const TileContainer = styled.div`
+  flex: 0 0 auto;
+  margin-right: ${props => props.theme.spacing.medium};
+  padding: ${props => props.theme.spacing.medium};
+  width: 25rem;
+  height: 20rem;
+  background-color: ${props => props.theme.colors.primary};
+  border-radius: 0.5rem;
+  box-shadow: ${props => props.theme.shadows.dark};
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.1s linear;
+  &:hover {
+    box-shadow: ${props => props.theme.shadows.normal};
+    background-color: ${props => props.theme.colors.secondary};
+  }
+  @media ${props => props.theme.breakpoints.mobile} {
+    width: 20rem;
+    height: 18rem;
+  }
+`
+const TextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+const IconsContainer = styled.div`
+  display: flex;
+`
+const Title = styled.h1`
+  font-size: ${props => props.theme.fontSize.smallTitle};
+  color: ${props => props.theme.colors.light};
+  font-weight: ${props => props.theme.fontWeight.bold};
+  margin-bottom: ${props => props.theme.spacing.xSmall};
+  @media ${props => props.theme.breakpoints.mobile} {
+    font-size: ${props => props.theme.fontSize.text};
+  }
+`
+const Date = styled.p`
+  font-size: ${props => props.theme.fontSize.extraSmall};
+  color: ${props => props.theme.colors.light};
+  font-weight: ${props => props.theme.fontWeight.light};
+  margin-bottom: ${props => props.theme.spacing.xSmall};
+  letter-spacing: 0.3rem;
+`
+const Description = styled.p`
+  font-size: ${props => props.theme.fontSize.extraSmall};
+  color: ${props => props.theme.colors.light};
+  font-weight: ${props => props.theme.fontWeight.light};
+`
+
+const Tile = ({ title, date, description, github, url }) => {
+  return (
+    <TileContainer>
+      <TextContainer>
+        <Date>{date}</Date>
+        <Title>{title}</Title>
+
+        <Description>{description}</Description>
+      </TextContainer>
+      <IconsContainer>
+        <Link to={github}>
+          <AiOutlineGithub style={{ color: "white", fontSize: "1.75rem" }} />
+        </Link>
+        <Link to={url}>
+          <FiExternalLink
+            style={{ color: "white", fontSize: "1.75rem", marginLeft: "1rem" }}
+          />
+        </Link>
+      </IconsContainer>
+    </TileContainer>
+  )
+}
+
+export default Tile
