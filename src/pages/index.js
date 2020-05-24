@@ -8,10 +8,10 @@ import SEO from "../components/seo"
 import Header from "../components/header"
 import Hero from "../components/hero"
 import HorizontalScroll from "../components/horizontalScroll"
-import About from "../components/About"
-import Skills from "../components/Skills"
-import Contact from "../components/Contact"
-import Footer from "../components/Footer"
+import About from "../components/about"
+import Skills from "../components/skills"
+import Contact from "../components/contact"
+import Footer from "../components/footer"
 
 const IndexPage = () => {
   return (
