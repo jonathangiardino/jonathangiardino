@@ -3,31 +3,31 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import styled from "styled-components"
 
-import Button from "./button"
-
-const HeroContainer = styled.div`
+const AboutContainer = styled.div`
   max-width: 80rem;
   margin: 0 auto;
-  height: 60vh;
+  padding: 5rem 0;
+  height: auto;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   @media ${props => props.theme.breakpoints.mobile} {
     height: auto;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
   }
 `
-const TitleContainer = styled.div`
+const TextContainer = styled.div`
   width: 50%;
   display: block;
   @media ${props => props.theme.breakpoints.mobile} {
     width: 90%;
     text-align: center;
+    margin-top: 3rem;
   }
 `
-const HeroTitle = styled.h1`
-  font-size: ${props => props.theme.fontSize.title};
+const AboutText = styled.p`
+  font-size: ${props => props.theme.fontSize.small};
   font-weight: ${props => props.theme.fontWeight.bold};
   line-height: 140%;
   @media ${props => props.theme.breakpoints.mobile} {
@@ -44,10 +44,12 @@ const Span = styled.span`
   color: ${props => props.theme.colors.primary};
 `
 
-const Hero = props => {
+const About = props => {
   const img = useStaticQuery(graphql`
     query {
-      peep_jonathan_hero: file(relativePath: { eq: "peep-jonathan-hero.png" }) {
+      peep_jonathan_standing: file(
+        relativePath: { eq: "peep-jonathan-standing.png" }
+      ) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
@@ -58,21 +60,23 @@ const Hero = props => {
   `)
 
   return (
-    <HeroContainer>
-      <TitleContainer>
-        <HeroTitle>
-          ( “Hello, World” ) 👋 <br />
-          My name is <Span>Jonathan Giardino</Span>. <br /> I design and develop
-          awesome experiences for <Span>Web</Span> and <Span>Mobile</Span>{" "}
-          mixing creativity and frugality.
-        </HeroTitle>
-        <Button text="Get in touch" action={() => alert("hello")} />
-      </TitleContainer>
+    <AboutContainer>
       <ImageWrapper>
-        <Img fluid={img.peep_jonathan_hero.childImageSharp.fluid} />
+        <Img fluid={img.peep_jonathan_standing.childImageSharp.fluid} />
       </ImageWrapper>
-    </HeroContainer>
+      <TextContainer>
+        <AboutText>
+          I am a <Span>Frontend & Mobile developer</Span> from Italy living in
+          Amsterdam, passionate about creating amazing experiences for web and
+          mobile. I have a solid background in Retail, Sales, Customer support,
+          Localization, Translation and Project Management that add up a
+          business side of me which often comes handy. Last but not least, I am
+          extremely eager to learn and express my creativity to the fullest on a
+          daily basis.
+        </AboutText>
+      </TextContainer>
+    </AboutContainer>
   )
 }
 
-export default Hero
+export default About

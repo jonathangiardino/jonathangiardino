@@ -8,6 +8,8 @@ import SEO from "../components/seo"
 import Header from "../components/header"
 import Hero from "../components/hero"
 import HorizontalScroll from "../components/horizontalScroll"
+import About from "../components/About"
+import Skills from "../components/Skills"
 
 const IndexPage = () => {
   return (
@@ -16,6 +18,8 @@ const IndexPage = () => {
       <Header />
       <Hero />
       <HorizontalScroll />
+      <About />
+      <Skills />
     </Layout>
   )
 }

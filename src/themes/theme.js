@@ -8,7 +8,7 @@ export default {
     dark: "#09323a",
   },
   fonts: {
-    main: "Poppins",
+    main: "Avenir Next",
     code: "Monospace",
   },
   fontSize: {
