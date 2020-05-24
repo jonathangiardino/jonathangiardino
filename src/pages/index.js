@@ -10,6 +10,8 @@ import Hero from "../components/hero"
 import HorizontalScroll from "../components/horizontalScroll"
 import About from "../components/About"
 import Skills from "../components/Skills"
+import Contact from "../components/Contact"
+import Footer from "../components/Footer"
 
 const IndexPage = () => {
   return (
@@ -20,6 +22,8 @@ const IndexPage = () => {
       <HorizontalScroll />
       <About />
       <Skills />
+      <Contact />
+      <Footer />
     </Layout>
   )
 }

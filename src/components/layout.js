@@ -4,6 +4,11 @@ import Img from "gatsby-image"
 import styled from "styled-components"
 import Context from "../store/context"
 
+if (typeof window !== "undefined") {
+  // eslint-disable-next-line global-require
+  require("smooth-scroll")('a[href*="#"]')
+}
+
 const Body = styled.body`
   margin: 0;
   padding: 0;

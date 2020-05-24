@@ -19,7 +19,15 @@ const TileContainer = styled.div`
   transition: all 0.1s linear;
   &:hover {
     box-shadow: ${props => props.theme.shadows.normal};
+    background-color: ${props => props.theme.colors.dark};
+  }
+  &:nth-of-type(odd) {
     background-color: ${props => props.theme.colors.secondary};
+
+    &:hover {
+      box-shadow: ${props => props.theme.shadows.dark};
+      background-color: ${props => props.theme.colors.dark};
+    }
   }
   @media ${props => props.theme.breakpoints.mobile} {
     width: 20rem;
@@ -64,15 +72,21 @@ const Tile = ({ title, date, description, github, url }) => {
 
         <Description>{description}</Description>
       </TextContainer>
+
       <IconsContainer>
-        <Link to={github}>
-          <AiOutlineGithub style={{ color: "white", fontSize: "1.75rem" }} />
-        </Link>
-        <Link to={url}>
+        {github ? (
+          <a href={github} target="_blank">
+            <AiOutlineGithub style={{ color: "white", fontSize: "1.75rem" }} />
+          </a>
+        ) : (
+          ""
+        )}
+
+        <a href={url} target="_blank">
           <FiExternalLink
             style={{ color: "white", fontSize: "1.75rem", marginLeft: "1rem" }}
           />
-        </Link>
+        </a>
       </IconsContainer>
     </TileContainer>
   )

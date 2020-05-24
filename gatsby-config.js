@@ -24,6 +24,8 @@ module.exports = {
     `react-icons`,
     `local-storage-fallback`,
     `kursor`,
+    `smooth-scroll`,
+    `gatsby-plugin-smoothscroll`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

@@ -39,10 +39,9 @@ const Header = () => {
   return (
     <Nav>
       <Menu>
-        <MenuItem title="Work" />
-        <MenuItem title="Profile" />
-        <MenuItem title="Stack" />
-        <MenuItem title="Blog" />
+        <MenuItem title="Work" anchor="work" />
+        <MenuItem title="Profile" anchor="about" />
+        <MenuItem title="Stack" anchor="skills" />
         <Link to="/page-2/" style={{ textDecoration: "none" }}>
           <MenuIcon style={{ color: state.isDark ? "#fff" : "#09323a" }}>
             <MdEmail style={{ fontSize: "2rem" }} />

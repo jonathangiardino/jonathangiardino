@@ -154,7 +154,7 @@ const Skills = props => {
   `)
 
   return (
-    <SkillsContainer>
+    <SkillsContainer id="skills">
       <ImageWrapper>
         <Img fixed={img.html5.childImageSharp.fixed} />
       </ImageWrapper>

@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import scrollTo from "gatsby-plugin-smoothscroll"
 import styled from "styled-components"
 
 import Button from "./button"
@@ -66,7 +67,7 @@ const Hero = props => {
           awesome experiences for <Span>Web</Span> and <Span>Mobile</Span>{" "}
           mixing creativity and frugality.
         </HeroTitle>
-        <Button text="Get in touch" action={() => alert("hello")} />
+        <Button text="Get in touch" action={() => scrollTo("#contact")} />
       </TitleContainer>
       <ImageWrapper>
         <Img fluid={img.peep_jonathan_hero.childImageSharp.fluid} />
