@@ -22,7 +22,7 @@ const SkillsContainer = styled.div`
 `
 
 const ImageWrapper = styled.div`
-  padding: 1rem;
+  padding: 0.5rem;
   margin: 1rem;
 `
 
@@ -33,119 +33,119 @@ const Skills = props => {
     query {
       html5: file(relativePath: { eq: "html5.png" }) {
         childImageSharp {
-          fixed(width: 50) {
+          fixed(width: 40) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       css3: file(relativePath: { eq: "css3.png" }) {
         childImageSharp {
-          fixed(width: 50) {
+          fixed(width: 40) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       sass: file(relativePath: { eq: "sass.png" }) {
         childImageSharp {
-          fixed(width: 50) {
+          fixed(width: 40) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       bootstrap: file(relativePath: { eq: "bootstrap.png" }) {
         childImageSharp {
-          fixed(width: 50) {
+          fixed(width: 40) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       javascript: file(relativePath: { eq: "javascript.png" }) {
         childImageSharp {
-          fixed(width: 50) {
+          fixed(width: 40) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       typescript: file(relativePath: { eq: "typescript.png" }) {
         childImageSharp {
-          fixed(width: 50) {
+          fixed(width: 40) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       vuejs: file(relativePath: { eq: "vuejs.png" }) {
         childImageSharp {
-          fixed(width: 50) {
+          fixed(width: 40) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       reactLogo: file(relativePath: { eq: "react-logo.png" }) {
         childImageSharp {
-          fixed(width: 50) {
+          fixed(width: 40) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       nativescript: file(relativePath: { eq: "nativescript.png" }) {
         childImageSharp {
-          fixed(width: 50) {
+          fixed(width: 40) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       swift: file(relativePath: { eq: "swift.png" }) {
         childImageSharp {
-          fixed(width: 50) {
+          fixed(width: 40) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       npm: file(relativePath: { eq: "npm.png" }) {
         childImageSharp {
-          fixed(width: 50) {
+          fixed(width: 40) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       yarn: file(relativePath: { eq: "yarn.png" }) {
         childImageSharp {
-          fixed(width: 50) {
+          fixed(width: 40) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       git: file(relativePath: { eq: "git.png" }) {
         childImageSharp {
-          fixed(width: 50) {
+          fixed(width: 40) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       githubBlack: file(relativePath: { eq: "github-black.png" }) {
         childImageSharp {
-          fixed(width: 50) {
+          fixed(width: 40) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       githubWhite: file(relativePath: { eq: "github-white.png" }) {
         childImageSharp {
-          fixed(width: 50) {
+          fixed(width: 40) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       sketch: file(relativePath: { eq: "sketch.png" }) {
         childImageSharp {
-          fixed(width: 50) {
+          fixed(width: 40) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       webflow: file(relativePath: { eq: "webflow.png" }) {
         childImageSharp {
-          fixed(width: 50) {
+          fixed(width: 40) {
             ...GatsbyImageSharpFixed
           }
         }
