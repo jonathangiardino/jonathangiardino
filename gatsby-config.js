@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Jonathan Giardino`,
-    description: `I am a Frontend & iOS developer from Italy living in Amsterdam, The Netherlands, passionate about creating amazing experiences for web and mobile. Follow me on Twitter @jonathan_gardn`,
+    description: `I am a Developer from Italy living in Amsterdam, passionate about creating amazing experiences for web and mobile. Follow me on Twitter @jonathan_gardn`,
     author: `@jonathan_gardn`,
   },
   plugins: [
