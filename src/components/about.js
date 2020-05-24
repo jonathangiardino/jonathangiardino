@@ -67,13 +67,13 @@ const About = props => {
       <TextContainer>
         <AboutText>
           I am a <Span>Frontend & Mobile developer</Span> from Italy living in
-          Amsterdam, passionate about creating amazing experiences for web and
-          mobile. I have a solid background in Retail, Sales, Customer support,
-          Localization, Translation and Project Management that add up a
-          business side of me which often comes handy. Last but not least, I am
-          extremely eager to learn and express my creativity to the fullest on a
-          daily basis. I am currently employed full-time with a firm, always
-          looking for external projects or new opportunities.
+          Amsterdam, passionate about creating amazing experiences for the web
+          and mobile devices. I have a solid background in Retail, Sales,
+          Customer support, Localization, Translation and Project Management
+          that add up a business side of me which often comes handy. Last but
+          not least, I am extremely eager to learn and express my creativity to
+          the fullest on a daily basis. I am currently employed full-time with a
+          firm, always looking for external projects or new opportunities.
         </AboutText>
       </TextContainer>
     </AboutContainer>
