@@ -1,5 +1,5 @@
 ---
-title: My First Post
+project: Test
 date: 2019/2020
 description: test post
 github: https://github.com/jonathangiardino/jonathangiardino
