@@ -4,7 +4,7 @@ import styled from "styled-components"
 import { MdEmail } from "react-icons/md"
 
 import Context from "../store/context"
-import MenuItem from "./menuItem"
+import BackButton from "./backButton"
 import ToggleDarkMode from "./toggle"
 
 // Style
@@ -23,29 +23,18 @@ const Menu = styled.div`
   align-items: center;
 `
 
-const MenuIcon = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: ${props => props.theme.spacing.medium};
-  @media ${props => props.theme.breakpoints.mobile} {
-    display: none;
-  }
-`
-// Component
-const Header = () => {
+
+const BlogHeader = () => {
   const { state } = useContext(Context)
 
   return (
     <Nav>
       <Menu>
-        <MenuItem title="Work" anchor="#work" />
-        <MenuItem title="Profile" anchor="#about" />
-        <MenuItem title="Stack" anchor="#skills" />
+        <BackButton title="Back" anchor="/" />
         <ToggleDarkMode />
       </Menu>
     </Nav>
   )
 }
 
-export default Header
+export default BlogHeader

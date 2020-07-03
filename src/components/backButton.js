@@ -12,12 +12,9 @@ const MenuLink = styled.p`
   &:hover {
     color: ${props => props.theme.colors.primary} !important;
   }
-  @media ${props => props.theme.breakpoints.mobile} {
-    display: none;
-  }
 `
 
-const MenuItem = ({ anchor, title }) => {
+const BackButton = ({ anchor, title }) => {
   const { state } = useContext(Context)
 
   return (
@@ -29,4 +26,4 @@ const MenuItem = ({ anchor, title }) => {
   )
 }
 
-export default MenuItem
+export default BackButton

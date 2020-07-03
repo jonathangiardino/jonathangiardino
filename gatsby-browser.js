@@ -9,6 +9,16 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
 }
+a {
+  text-decoration: none;
+  color: ${props => props.theme.colors.primary}
+}
+p {
+  padding: 0.75rem 0;
+}
+h3 {
+  margin-top: 1rem;
+}
 `
 
 export const wrapRootElement = ({ element }) => (

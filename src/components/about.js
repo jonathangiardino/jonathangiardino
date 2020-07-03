@@ -22,7 +22,7 @@ const TextContainer = styled.div`
   display: block;
   @media ${props => props.theme.breakpoints.mobile} {
     width: 90%;
-    text-align: center;
+    text-align: flex-start;
     margin-top: 3rem;
   }
 `

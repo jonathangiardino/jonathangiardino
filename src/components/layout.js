@@ -9,7 +9,7 @@ if (typeof window !== "undefined") {
   require("smooth-scroll")('a[href*="#"]')
 }
 
-const Body = styled.body`
+const Body = styled.div`
   margin: 0;
   padding: 0;
   font-family: ${props => props.theme.fonts.main};
@@ -41,6 +41,7 @@ const Layout = ({ children }) => {
       style={{
         backgroundColor: state.isDark ? "#09323a" : "#fff",
         color: state.isDark ? "#fff" : "#09323a",
+        textDecoration: "none"
       }}
     >
       <Img

@@ -33,7 +33,23 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-vscode`,
+            options: {
+              theme: {
+                default: "Solarized Light",
+                dark: "Monokai Dimmed",
+              },
+            },
+          },
+          `gatsby-remark-line-breaks`,
+        ],
+      },
+    },
     `gatsby-plugin-netlify-cms`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

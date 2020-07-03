@@ -74,11 +74,11 @@ const BlogTile = ({ title, date, excerpt, slug, id }) => {
       </TextContainer>
 
       <IconsContainer>
-        <a href={`/articles/${slug}`} target="_blank">
+        <Link to={`/articles/${slug}`}>
           <FiExternalLink
             style={{ color: "white", fontSize: "1.75rem", marginLeft: "1rem" }}
           />
-        </a>
+        </Link>
       </IconsContainer>
     </TileContainer>
   )

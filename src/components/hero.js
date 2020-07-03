@@ -64,8 +64,7 @@ const Hero = props => {
         <HeroTitle>
           ( “Hello, World” 👋) <br />I am <Span>Jonathan Giardino</Span>. <br />{" "}
           I design and develop unique digital experiences.
-          <br />
-          <Span>Fancy a chat?</Span>
+          <Span> Fancy a chat?</Span>
         </HeroTitle>
         <Button text="Get in touch" action={() => scrollTo("#contact")} />
       </TitleContainer>

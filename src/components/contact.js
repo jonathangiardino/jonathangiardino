@@ -19,21 +19,22 @@ const ContactContainer = styled.div`
   }
 `
 const TitleContainer = styled.div`
-  width: 35%;
-  display: block;
+  width: 40%;
+  display: flex;
   padding: ${props => props.theme.spacing.medium};
   @media ${props => props.theme.breakpoints.mobile} {
     width: 90%;
     text-align: center;
+    display: block;
   }
 `
 const ContactTitle = styled.h1`
   font-size: ${props => props.theme.fontSize.title};
   font-weight: ${props => props.theme.fontWeight.bold};
-  line-height: 140%;
-  margin-bottom: ${props => props.theme.spacing.small};
+
   @media ${props => props.theme.breakpoints.mobile} {
     font-size: ${props => props.theme.fontSize.smallTitle};
+    margin-bottom: ${props => props.theme.spacing.small};
   }
 `
 const ImageWrapper = styled.div`
@@ -46,14 +47,14 @@ const Span = styled.span`
   color: ${props => props.theme.colors.primary};
 `
 const ContactRow = styled.div`
-  width: 100%;
+  width: 40%;
   display: flex;
-
   justify-content: center;
   align-items: center;
   padding: ${props => props.theme.spacing.xSmall} 0;
   @media ${props => props.theme.breakpoints.mobile} {
     justify-content: center;
+    width: 100%;
   }
 `
 const Icon = styled.div`
@@ -61,6 +62,10 @@ const Icon = styled.div`
   justify-content: center;
   align-items: center;
   margin-right: ${props => props.theme.spacing.medium};
+  @media ${props => props.theme.breakpoints.mobile} {
+    margin-right: 0;
+    padding: 0 ${props => props.theme.spacing.small};
+  }
 `
 const Text = styled.a`
   display: flex;
@@ -90,9 +95,7 @@ const Contact = props => {
   return (
     <ContactContainer id="contact">
       <TitleContainer>
-        <ContactTitle>
-          Drop me a line ✍🏼 <br />
-        </ContactTitle>
+        <ContactTitle>Drop me a line</ContactTitle>
         <ContactRow>
           <Text
             style={{ color: state.isDark ? "#fff" : "#09323a" }}
