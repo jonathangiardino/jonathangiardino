@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import styled from "styled-components"
 
-import BlogTile from "./BlogTile"
+import BlogTile from "./blogTile"
 
 const SectionContainer = styled.div`
   padding: 0;
