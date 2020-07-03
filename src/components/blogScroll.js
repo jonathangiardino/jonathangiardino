@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import styled from "styled-components"
 
-import Tile from "./tile"
+import BlogTile from "./BlogTile"
 
 const SectionContainer = styled.div`
   padding: 0;
@@ -32,8 +32,8 @@ const HorizontalContainer = styled.div`
   }
 `
 
-const HorizontalScroll = data => {
-  const img = useStaticQuery(graphql`
+const BlogScroll = () => {
+  const query = useStaticQuery(graphql`
     query {
       arrowRight: file(relativePath: { eq: "arrow-right.png" }) {
         childImageSharp {
@@ -42,34 +42,47 @@ const HorizontalScroll = data => {
           }
         }
       }
+      allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/articles/" } }) {
+        edges {
+          node {
+            id
+            frontmatter {
+              title
+              excerpt
+              date
+              slug
+            }
+          }
+        }
+      }
     }
   `)
 
-  const projects = data.data.allMarkdownRemark.edges
+  const posts = query.allMarkdownRemark.edges
 
   return (
     <SectionContainer id="work">
       <ArrowContainer>
         <Img
-          fluid={img.arrowRight.childImageSharp.fluid}
+          fluid={query.arrowRight.childImageSharp.fluid}
           style={{ width: "4rem" }}
         />
       </ArrowContainer>
       <HorizontalContainer>
-        {projects.map(
+        {posts.map(
           ({
             node: {
-              frontmatter: { project, date, description, url, github },
+              id,
+              frontmatter: { title, date, excerpt, slug },
             },
           }) => {
             return (
-              <Tile
-                key={url}
-                title={project}
+              <BlogTile
+                key={id}
+                title={title}
                 date={date}
-                description={description}
-                url={url}
-                github={github}
+                description={excerpt}
+                slug={slug}
               />
             )
           }
@@ -79,4 +92,4 @@ const HorizontalScroll = data => {
   )
 }
 
-export default HorizontalScroll
+export default BlogScroll

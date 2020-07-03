@@ -66,14 +66,15 @@ const About = props => {
       </ImageWrapper>
       <TextContainer>
         <AboutText>
-          I am a <Span>Web Developer</Span> from Italy living in Amsterdam,
-          passionate about creating amazing experiences for the web as well as
-          mobile apps more recently. I have a solid background in Retail, Sales,
-          Customer support, Localization, Translation and Project Management
-          that add up a business side of me which often comes handy. Last but
-          not least, I am extremely eager to learn and express my creativity to
-          the fullest on a daily basis. I am currently employed full-time with a
-          firm, always looking for external projects or new opportunities.
+          I am a <Span>Web Designer / Developer</Span> from Italy living in
+          Amsterdam, passionate about creating amazing experiences for the web
+          as well as mobile apps more recently. I have a solid background in
+          Retail, Sales, Customer support, Localization, Translation and Project
+          Management that add up a business side of me which often comes handy.
+          Last but not least, I am extremely eager to learn and express my
+          creativity to the fullest on a daily basis. I am currently employed
+          full-time with a firm, always looking for external projects or new
+          opportunities.
         </AboutText>
       </TextContainer>
     </AboutContainer>

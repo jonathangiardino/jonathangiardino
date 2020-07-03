@@ -1,7 +1,38 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+exports.createPages = async ({ actions, graphql }) => {
+  const { data } = await graphql(`
+    query {
+      allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/articles/" } }) {
+        edges {
+          node {
+            id
+            frontmatter {
+              date
+              description
+              excerpt
+              title
+              slug
+            }
+          }
+        }
+      }
+    }
+  `)
 
-// You can delete this file if you're not using it
+  if (data.errors) {
+    console.log("error retriveing blog articles")
+    return
+  }
+
+  const articleTemplate = require.resolve(`./src/templates/article.js`)
+
+  data.allMarkdownRemark.edges.forEach(edge => {
+    const slug = edge.node.frontmatter.slug
+    actions.createPage({
+      path: `/articles/${slug}/`,
+      component: articleTemplate,
+      context: {
+        slug: slug,
+      },
+    })
+  })
+}

@@ -13,10 +13,21 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `articles`,
+        path: `${__dirname}/articles/blog-posts`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-styled-components`,
       options: {
         // Add any options here
       },
+    },
+    {
+      resolve: "gatsby-image-graphql-schema",
+      options: {},
     },
     `gatsby-plugin-react-helmet`,
     {

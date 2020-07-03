@@ -22,3 +22,20 @@ collections:
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Github", name: "github", widget: "string" }
       - { label: "URL", name: "url", widget: "string" }
+
+  - name: "articles"
+    label: "Articles"
+    folder: "/articles/blog-posts"
+    create: true
+    slug: "{{slug}}"
+    media_folder: ""
+    public_folder: ""
+    path: "{{title}}/index"
+    editor:
+      preview: true
+    fields:
+      - { label: "Slug", name: "slug", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "string" }
+      - { label: "Excerpt", name: "excerpt", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }

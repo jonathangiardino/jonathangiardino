@@ -48,7 +48,8 @@ const Span = styled.span`
 const ContactRow = styled.div`
   width: 100%;
   display: flex;
-  justify-content: flex-start;
+
+  justify-content: center;
   align-items: center;
   padding: ${props => props.theme.spacing.xSmall} 0;
   @media ${props => props.theme.breakpoints.mobile} {
@@ -100,10 +101,7 @@ const Contact = props => {
             <Icon style={{ color: state.isDark ? "#fff" : "#09323a" }}>
               <MdEmail style={{ fontSize: "2rem" }} />
             </Icon>
-            hello@jonathangiardino.com
           </Text>
-        </ContactRow>
-        <ContactRow>
           <Text
             style={{ color: state.isDark ? "#fff" : "#09323a" }}
             href="https://twitter.com/jonathan_gardn"
@@ -112,7 +110,6 @@ const Contact = props => {
             <Icon style={{ color: " #00acee" }}>
               <FaTwitter style={{ fontSize: "2rem" }} />
             </Icon>
-            @jonathan_gardn
           </Text>
         </ContactRow>
       </TitleContainer>

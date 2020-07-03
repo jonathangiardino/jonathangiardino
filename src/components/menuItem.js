@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 import Context from "../store/context"
 
-const MenuLink = styled.a`
+const MenuLink = styled.p`
   margin-left: ${props => props.theme.spacing.medium};
   font-size: ${props => props.theme.fontSize.extraSmall};
   font-weight: ${props => props.theme.fontWeight.normal};
