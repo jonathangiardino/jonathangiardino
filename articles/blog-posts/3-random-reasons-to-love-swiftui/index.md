@@ -83,8 +83,6 @@ Are you tired like me to rebuild the project every time you edit a corner radius
 
 Well, SwiftUI has a Live Canvas that show the changes almost to the second. It’s really impressive and speeds up UI development amazingly.
 
-![](https://miro.medium.com/max/1200/1*H0fFjV-A6jv1nh0y-gBlJQ.gif)
-
 Any feedback, comment or advice is super appreciated, in fact, it is encouraged.
 
 Let’s connect!
