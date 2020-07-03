@@ -41,6 +41,7 @@ export default {
   spacing: {
     xSmall: "0.50rem",
     small: "1rem",
+    semiSmall: "1.5rem",
     medium: "2rem",
     large: "3rem",
     xlarge: "5rem",

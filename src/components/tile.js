@@ -7,7 +7,7 @@ import { FiExternalLink } from "react-icons/fi"
 const TileContainer = styled.div`
   flex: 0 0 auto;
   margin-right: ${props => props.theme.spacing.medium};
-  padding: ${props => props.theme.spacing.medium};
+  padding: ${props => props.theme.spacing.semiSmall};
   width: 25rem;
   height: 20rem;
   background-color: ${props => props.theme.colors.primary};
@@ -60,7 +60,7 @@ const Date = styled.p`
 const Description = styled.p`
   font-size: ${props => props.theme.fontSize.extraSmall};
   color: ${props => props.theme.colors.light};
-  font-weight: ${props => props.theme.fontWeight.light};
+  font-weight: ${props => props.theme.fontWeight.normal};
 `
 
 const Tile = ({ title, date, description, github, url }) => {

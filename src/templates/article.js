@@ -35,6 +35,7 @@ const ArticleContainer = styled.div`
   align-items: center;
   @media ${props => props.theme.breakpoints.mobile} {
     height: auto;
+    max-width: 100vw;
   }
 `
 
@@ -43,7 +44,7 @@ const TextContainer = styled.div`
   display: block;
   @media ${props => props.theme.breakpoints.mobile} {
     width: 100%;
-    /* text-align: center; */
+    max-width: 100vw;
     padding: ${props => props.theme.spacing.small};
     margin: ${props => props.theme.spacing.small};
   }
@@ -54,6 +55,7 @@ const ArticleText = styled.p`
   line-height: 140%;
   @media ${props => props.theme.breakpoints.mobile} {
     font-size: ${props => props.theme.fontSize.small};
+    max-width: 100vw;
   }
 `
 const SmallText = styled.p`
