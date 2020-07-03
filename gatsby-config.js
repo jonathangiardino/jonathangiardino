@@ -25,10 +25,6 @@ module.exports = {
         // Add any options here
       },
     },
-    {
-      resolve: "gatsby-image-graphql-schema",
-      options: {},
-    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
