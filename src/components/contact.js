@@ -117,7 +117,7 @@ const Contact = props => {
         </ContactRow>
       </TitleContainer>
       <ImageWrapper>
-        <Img fluid={img.peep_jonathan_sitting.childImageSharp.fluid} />
+        <Img style={{width: "90%"}} fluid={img.peep_jonathan_sitting.childImageSharp.fluid} />
       </ImageWrapper>
     </ContactContainer>
   )

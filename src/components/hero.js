@@ -36,7 +36,10 @@ const HeroTitle = styled.h1`
   }
 `
 const ImageWrapper = styled.div`
-  width: 20rem;
+  width: 22rem;
+  display: flex;
+  justify-content: center;
+  
   @media ${props => props.theme.breakpoints.mobile} {
     width: 10rem;
   }
@@ -63,13 +66,14 @@ const Hero = props => {
       <TitleContainer>
         <HeroTitle>
           ( “Hello, World” 👋) <br />I am <Span>Jonathan Giardino</Span>. <br />{" "}
-          I design and develop unique digital experiences.
+          I love designing and developing<br />
+          cool stuff for the Web.<br />
           <Span> Fancy a chat?</Span>
         </HeroTitle>
         <Button text="Get in touch" action={() => scrollTo("#contact")} />
       </TitleContainer>
       <ImageWrapper>
-        <Img fluid={img.peep_jonathan_hero.childImageSharp.fluid} />
+        <Img style={{width: "90%"}} fluid={img.peep_jonathan_hero.childImageSharp.fluid} />
       </ImageWrapper>
     </HeroContainer>
   )

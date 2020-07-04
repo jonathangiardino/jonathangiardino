@@ -69,8 +69,7 @@ Here you can type sticker and select “Sticker Pack Extension”, click next an
 
 And easy enough, inside that folder created:
 
-\- Navigate to the .xcassets folder\
-
+- Navigate to the .xcassets folder
 - Add the correct icon sizes that will show in the Messages app as an option to attach the stickers inside the App icon\
 - Add the stickers images inside the Sticker Pack folder\
 - Build your app and when opening the Messages app in the options to attach your new Sticker pack will appear!

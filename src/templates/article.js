@@ -60,11 +60,12 @@ const ArticleText = styled.p`
 `
 const SmallText = styled.p`
   font-size: ${props => props.theme.fontSize.xSmall};
-  font-weight: ${props => props.theme.fontWeight.light};
+  font-weight: ${props => props.theme.fontWeight.normal};
   line-height: 140%;
   color: ${props => props.theme.colors.lightBlue};
   margin-bottom: ${props => props.theme.spacing.medium};
   letter-spacing: 0.1rem;
+  text-transform: uppercase;
 `
 
 const Article = ({ data }) => {

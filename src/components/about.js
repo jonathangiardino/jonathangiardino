@@ -62,7 +62,7 @@ const About = props => {
   return (
     <AboutContainer id="about">
       <ImageWrapper>
-        <Img fluid={img.peep_jonathan_standing.childImageSharp.fluid} />
+        <Img style={{width: "90%"}} fluid={img.peep_jonathan_standing.childImageSharp.fluid} />
       </ImageWrapper>
       <TextContainer>
         <AboutText>
