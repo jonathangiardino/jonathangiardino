@@ -71,13 +71,12 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: "gatsby-plugin-web-font-loader",
       options: {
-        fonts: [
-          `Monospace\:300,400,600,900`,
-          `Poppins\:300,400,600,900`, // you can also specify font weights and styles
-        ],
-        display: "swap",
+        custom: {
+          families: ["Avenir next", "Avenir next bold"],
+          urls: ["/fonts/fonts.css"],
+        },
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

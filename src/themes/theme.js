@@ -8,13 +8,14 @@ export default {
     dark: "#09323a",
   },
   fonts: {
-    main: "Raleway",
-    code: "Monospace",
+    main: "Avenir next",
+    bold: "Avenir next bold",
   },
   fontSize: {
     extraSmall: "0.9rem",
     description: "1rem",
     smallTitle: "1.75rem",
+    smallText: "1.2rem",
     text: "1.5rem",
     small: "1.25rem",
     title: "2rem",

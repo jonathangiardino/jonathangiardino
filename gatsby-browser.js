@@ -2,7 +2,6 @@ import React from "react"
 import { createGlobalStyle, ThemeProvider } from "styled-components"
 import Theme from "./src/themes/theme"
 import GlobalStateProvider from "./src/store/GlobalStateProvider"
-import 'typeface-raleway'
 
 const GlobalStyle = createGlobalStyle`
 * {
@@ -16,9 +15,11 @@ a {
 }
 p {
   padding: 0.75rem 0;
+  font-size: ${props => props.theme.fontSize.smallText}
 }
 h3 {
-  margin-top: 1rem;
+  margin-top: 2rem;
+  font-size: ${props => props.theme.fontSize.smallTitle}
 }
 `
 
