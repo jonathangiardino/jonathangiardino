@@ -42,7 +42,7 @@ const IconsContainer = styled.div`
   display: flex;
 `
 const Title = styled.h1`
-  font-size: ${props => props.theme.fontSize.smallTitle};
+  font-size: ${props => props.theme.fontSize.text};
   color: ${props => props.theme.colors.light};
   font-weight: ${props => props.theme.fontWeight.bold};
   margin-bottom: ${props => props.theme.spacing.xSmall};
@@ -76,7 +76,7 @@ const BlogTile = ({ title, date, excerpt, slug, id }) => {
       <IconsContainer>
         <Link to={`/articles/${slug}`}>
           <FiExternalLink
-            style={{ color: "white", fontSize: "1.75rem", marginLeft: "1rem" }}
+            style={{ color: "white", fontSize: "1.75rem", marginRight: "1rem" }}
           />
         </Link>
       </IconsContainer>
