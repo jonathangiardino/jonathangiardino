@@ -22,6 +22,7 @@ const TitleContainer = styled.div`
   width: 40%;
   display: flex;
   padding: ${props => props.theme.spacing.medium};
+  
   @media ${props => props.theme.breakpoints.mobile} {
     width: 90%;
     text-align: center;
@@ -31,7 +32,7 @@ const TitleContainer = styled.div`
 const ContactTitle = styled.h1`
   font-size: ${props => props.theme.fontSize.title};
   font-weight: ${props => props.theme.fontWeight.bold};
-
+  line-height: 140%;
   @media ${props => props.theme.breakpoints.mobile} {
     font-size: ${props => props.theme.fontSize.smallTitle};
     margin-bottom: ${props => props.theme.spacing.small};
@@ -95,7 +96,7 @@ const Contact = props => {
   return (
     <ContactContainer id="contact">
       <TitleContainer>
-        <ContactTitle>Drop me a line</ContactTitle>
+        <ContactTitle>✍🏼 Drop me a line</ContactTitle>
         <ContactRow>
           <Text
             style={{ color: state.isDark ? "#fff" : "#09323a" }}
@@ -117,7 +118,7 @@ const Contact = props => {
         </ContactRow>
       </TitleContainer>
       <ImageWrapper>
-        <Img style={{width: "90%"}} fluid={img.peep_jonathan_sitting.childImageSharp.fluid} />
+        <Img style={{width: "100%"}} fluid={img.peep_jonathan_sitting.childImageSharp.fluid} />
       </ImageWrapper>
     </ContactContainer>
   )

@@ -35,49 +35,49 @@ const Footer = props => {
     query {
       githubBlack: file(relativePath: { eq: "github-black.png" }) {
         childImageSharp {
-          fixed(width: 35) {
+          fixed(width: 30) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       githubWhite: file(relativePath: { eq: "github-white.png" }) {
         childImageSharp {
-          fixed(width: 35) {
+          fixed(width: 30) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       webflow: file(relativePath: { eq: "webflow.png" }) {
         childImageSharp {
-          fixed(width: 35) {
+          fixed(width: 30) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       medium: file(relativePath: { eq: "medium.png" }) {
         childImageSharp {
-          fixed(width: 35) {
+          fixed(width: 30) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       devWhite: file(relativePath: { eq: "devWhite.png" }) {
         childImageSharp {
-          fixed(width: 35) {
+          fixed(width: 30) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       dev: file(relativePath: { eq: "dev.png" }) {
         childImageSharp {
-          fixed(width: 35) {
+          fixed(width: 30) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       dribbble: file(relativePath: { eq: "dribbble.png" }) {
         childImageSharp {
-          fixed(width: 35) {
+          fixed(width: 30) {
             ...GatsbyImageSharpFixed
           }
         }

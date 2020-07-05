@@ -2,6 +2,7 @@ import React from "react"
 import { createGlobalStyle, ThemeProvider } from "styled-components"
 import Theme from "./src/themes/theme"
 import GlobalStateProvider from "./src/store/GlobalStateProvider"
+import 'typeface-raleway'
 
 const GlobalStyle = createGlobalStyle`
 * {

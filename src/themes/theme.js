@@ -8,7 +8,7 @@ export default {
     dark: "#09323a",
   },
   fonts: {
-    main: "Avenir Next",
+    main: "Raleway",
     code: "Monospace",
   },
   fontSize: {

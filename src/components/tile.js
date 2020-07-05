@@ -76,7 +76,7 @@ const Tile = ({ title, date, description, github, url }) => {
       <IconsContainer>
         {github ? (
           <a href={github} target="_blank">
-            <AiOutlineGithub style={{ color: "white", fontSize: "1.75rem" }} />
+            <AiOutlineGithub style={{ color: "white", fontSize: "1.75rem",marginRight: "1rem" }} />
           </a>
         ) : (
           ""
@@ -84,7 +84,7 @@ const Tile = ({ title, date, description, github, url }) => {
 
         <a href={url} target="_blank">
           <FiExternalLink
-            style={{ color: "white", fontSize: "1.75rem", marginLeft: "1rem" }}
+            style={{ color: "white", fontSize: "1.75rem", marginRight: "1rem" }}
           />
         </a>
       </IconsContainer>
