@@ -9,7 +9,6 @@ export default {
   },
   fonts: {
     main: "Avenir next",
-    bold: "Avenir next bold",
   },
   fontSize: {
     extraSmall: "0.9rem",

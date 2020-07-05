@@ -16,7 +16,7 @@ const TitleContainer = styled.div`
 `
 const ArticleTitle = styled.h1`
   font-size: ${props => props.theme.fontSize.title};
-  font-family: ${props => props.theme.fonts.bold};
+  font-weight: ${props => props.theme.fontWeight.bold};
   line-height: 140%;
 
   color: ${props => props.theme.colors.primary};

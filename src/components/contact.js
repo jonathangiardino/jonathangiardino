@@ -31,7 +31,7 @@ const TitleContainer = styled.div`
 `
 const ContactTitle = styled.h1`
   font-size: ${props => props.theme.fontSize.title};
-  font-family: ${props => props.theme.fonts.bold};
+  font-weight: ${props => props.theme.fontWeight.bold};
   
   @media ${props => props.theme.breakpoints.mobile} {
     font-size: ${props => props.theme.fontSize.smallTitle};
