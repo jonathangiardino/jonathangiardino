@@ -18,10 +18,10 @@ const IndexPage = ({ data }) => {
       <SEO title="Home" />
       <Header />
       <Hero />
-      <HorizontalScroll data={data} />
-      <About />
-      <Skills />
-      <BlogScroll />
+      {/* <HorizontalScroll data={data} /> */}
+      {/* <About /> */}
+      {/* <Skills /> */}
+      {/* <BlogScroll /> */}
       <Contact />
       <Footer />
     </Layout>
