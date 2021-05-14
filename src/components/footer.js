@@ -96,9 +96,6 @@ const Footer = props => {
           }
         />
       </ImageWrapper>
-      <ImageWrapper href="https://webflow.com/jonathangiardino" target="_blank">
-        <Img fixed={img.webflow.childImageSharp.fixed} />
-      </ImageWrapper>
       <ImageWrapper href="https://medium.com/@jonathangiardino" target="_blank">
         <Img fixed={img.medium.childImageSharp.fixed} />
       </ImageWrapper>

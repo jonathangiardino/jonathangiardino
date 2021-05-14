@@ -28,11 +28,12 @@ const TitleContainer = styled.div`
   }
 `
 const HeroTitle = styled.h1`
-  font-size: ${props => props.theme.fontSize.title};
+  font-size: 3rem;
   font-weight: ${props => props.theme.fontWeight.bold};
-  line-height: 140%;
+  line-height: 110%;
   @media ${props => props.theme.breakpoints.mobile} {
-    font-size: ${props => props.theme.fontSize.small};
+    font-size: 2rem;
+    margin-top: 0.5rem;
   }
 `
 const ImageWrapper = styled.div`
@@ -65,12 +66,10 @@ const Hero = props => {
     <HeroContainer>
       <TitleContainer>
         <HeroTitle>
-          ( “Hello, World” 👋) <br />I am <Span>Jonathan Giardino</Span>. <br />{" "}
-          I love designing and developing<br />
-          cool stuff for the Web.<br />
+          Howdy, 👋 <br />I am <Span>Jonathan Giardino</Span>. <br />{" "}
           <Span> Fancy a chat?</Span>
         </HeroTitle>
-        <Button text="Get in touch" action={() => scrollTo("#contact")} />
+        {/* <Button text="Get in touch" action={() => scrollTo("#contact")} /> */}
       </TitleContainer>
       <ImageWrapper>
         <Img style={{width: "90%"}} fluid={img.peep_jonathan_hero.childImageSharp.fluid} />

@@ -10,32 +10,36 @@ import Context from "../store/context"
 const ContactContainer = styled.div`
   max-width: 80rem;
   margin: 0 auto;
-  height: 80vh;
+  height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
   @media ${props => props.theme.breakpoints.mobile} {
     flex-direction: column;
+    height: 40vh;
   }
 `
 const TitleContainer = styled.div`
-  width: 40%;
+  width: 100%;
   display: flex;
+  justify-content: center;
   padding: ${props => props.theme.spacing.medium};
-  
+
   @media ${props => props.theme.breakpoints.mobile} {
-    width: 90%;
+    width: 100%;
     text-align: center;
-    display: block;
+    flex-direction: column;
   }
 `
 const ContactTitle = styled.h1`
   font-size: ${props => props.theme.fontSize.title};
   font-weight: ${props => props.theme.fontWeight.bold};
-  
+  margin-right: 2rem;
+
   @media ${props => props.theme.breakpoints.mobile} {
     font-size: ${props => props.theme.fontSize.smallTitle};
     margin-bottom: ${props => props.theme.spacing.small};
+    margin-right: 0;
   }
 `
 const ImageWrapper = styled.div`
@@ -48,7 +52,6 @@ const Span = styled.span`
   color: ${props => props.theme.colors.primary};
 `
 const ContactRow = styled.div`
-  width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,7 +99,7 @@ const Contact = props => {
   return (
     <ContactContainer id="contact">
       <TitleContainer>
-        <ContactTitle>✍🏼 Drop me a line</ContactTitle>
+        <ContactTitle>Drop me a line</ContactTitle>
         <ContactRow>
           <Text
             style={{ color: state.isDark ? "#fff" : "#09323a" }}
@@ -117,9 +120,9 @@ const Contact = props => {
           </Text>
         </ContactRow>
       </TitleContainer>
-      <ImageWrapper>
+      {/* <ImageWrapper>
         <Img style={{width: "100%"}} fluid={img.peep_jonathan_sitting.childImageSharp.fluid} />
-      </ImageWrapper>
+      </ImageWrapper> */}
     </ContactContainer>
   )
 }

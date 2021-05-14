@@ -39,9 +39,9 @@ const Header = () => {
   return (
     <Nav>
       <Menu>
-        <MenuItem title="Work" anchor="#work" />
+        {/* <MenuItem title="Work" anchor="#work" />
         <MenuItem title="Profile" anchor="#about" />
-        <MenuItem title="Stack" anchor="#skills" />
+        <MenuItem title="Stack" anchor="#skills" /> */}
         <ToggleDarkMode />
       </Menu>
     </Nav>
